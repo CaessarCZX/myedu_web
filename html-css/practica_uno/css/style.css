@@ -1,0 +1,22 @@
+body{
+    background-color: darkgray;
+}
+
+.container-big{
+    background: white;
+    border-radius: 2px;
+    border: 2px solid ;
+}
+
+.container-med{
+    padding: 5px;
+    margin: 5px;
+}
+
+.container-med h3{
+    margin: 2px;
+}
+
+.container-med p{
+    margin: 3px;
+}
