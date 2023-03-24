@@ -18,10 +18,10 @@ body{
 }
 
 .container-med h3{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia;
     margin: 0px;
     padding: 0;
-    font-weight: normal;
+    font-weight: 500;
 }
 
 .container-med p{
@@ -33,5 +33,31 @@ body{
 #button-ok{
     border: hidden;
     border-radius: 0px;
+    margin: 0;
+    padding: 9px;
+    background-color: #4188f1;
+    color: white;
+    font-weight: 450;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    display: inline-block;
+    height: 35px;
+    width: 69px;
+}
+
+#button-can{
+    border: hidden;
+    border-radius: 0;
+    margin-left: 3px;
+    padding: 9px;
+    padding-right: 1.5em;
+    background-color: #aaaaaa;
+    color: whitesmoke;
+    font-weight: 450;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    display: inline-block;
+    height: 35px;
+    width: 75px;
 }
 
