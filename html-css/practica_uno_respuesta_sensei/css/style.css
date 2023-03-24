@@ -1,0 +1,47 @@
+body{
+    background-color: #eee;
+}
+
+.caja{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    border-top: solid 0px;   
+}
+
+.cabecera{
+    padding: 0.9em;
+}
+
+.cabecera h3{
+    margin: 0px;
+    font-weight: 500;
+}
+
+.contenido{
+    padding: 1em;
+    border-top: 1px solid #ccc;
+}
+
+.contenido p{
+    margin: 0px;
+}
+
+.footer{
+    padding: 1em;
+    border-top: 1px solid #ccc;
+}
+
+.primario{
+    border: hidden;
+    background-color: #0090ff;
+    padding: 0.5em;
+    color: #fff;
+}
+
+.secundario{
+    border: hidden;
+    background-color: #aaa;
+    padding: 0.5em;
+    color: #fff;
+}
