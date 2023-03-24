@@ -1,0 +1,27 @@
+body{
+    background-color: #ccc;
+}
+
+.content{
+    background-color: #eee;
+}
+
+.box-line{
+    color: #430565;
+    text-align: justify;
+    padding: 1em;
+}
+
+.box-line p{
+    text-indent: 2em;
+    margin-bottom: 1em;
+    margin-top: 0em;
+    text-shadow: 0.2em 0.15em 0.4em #666566;
+
+}
+
+.box-line a{
+    text-decoration: line-through;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+}
