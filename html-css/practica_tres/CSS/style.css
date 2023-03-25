@@ -11,8 +11,8 @@ body{
     border-top: 0px;
 }
 
-.containe-toLinks{
-    display: block;
+.container-toLinks{
+    display: flex;
 }
 
 .toLinks{
@@ -61,14 +61,13 @@ body{
 }
 
 .container-toLists{
-    display: block;
-}
-
-.listContainer{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+}
+
+.listContainer{
+    display: inline-flex;
 }
 
 .listContainer ul{
@@ -95,4 +94,38 @@ body{
     background-color: #ffbf69;
     border-bottom: none;
     color: #fff;
+}
+
+.container-toTable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tablecontainer{
+    display: inline-flex;
+    padding: 1em 0em 0.5em 0em;
+}
+
+.tablecontainer table{
+    width: 40em;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tablecontainer table thead th{
+    text-align: center;
+    background-color: #ff9f1c;
+    color: #fff;
+    padding: 0.5em;
+}
+
+.tablecontainer table tbody tr:nth-child(even){
+    background-color: #ffbf69;
+}
+
+.tablecontainer table tbody td{
+    font-size: 0.9rem;
+    padding: 0.5em;
+    /* border: 1px solid #ccc; */
 }
