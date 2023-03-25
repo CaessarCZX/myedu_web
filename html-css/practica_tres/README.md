@@ -1,0 +1,2 @@
+En esta practica vamos a estar viendo como aplicar propiedades a los links, las listas y a las propias tablas con CSS
+Esta practica reafirma concceptos basicos e importantes para con las propiedades de CSS.
