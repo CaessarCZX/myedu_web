@@ -1,0 +1,32 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body{
+    background-color: #ececec;
+    color: #1f1f1f;
+}
+
+.header{
+    display: inline-flex;
+}
+
+.header ul{
+    font-family: sans-serif;
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.header ul li{
+    float: left;
+    padding: 1rem;
+}
+
+.header ul li a{
+
+}
