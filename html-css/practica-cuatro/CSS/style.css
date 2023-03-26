@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 1em;
+    background-color: #ececec;
+    color: #1c1c1c;
+}
+
+header{
+display: block;
+border: 0.5rem solid #878786;
+}
+
+header span{
+    font-family: 'Rubik', sans-serif;
+}
+
+header p{
+    max-width: 425px;
+    margin: auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    position: relative;
+    /* position: fixed;  esta sirve principalmente para anclar este elemeto 
+    en nuestra pagina web*/
+}
+
+header p span{
+    display: inline;
+    color: #822396;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.content{
+    display: block;
+    margin-top: 1rem;
+}
+
+.text-area{
+    display: inline;
+    float: left;
+    max-width: 50%;
+    text-align: justify;
+    padding: 1rem;
+    margin-left: 2rem;
+}
+
+#litte-text{
+    display: inline-block;
+    text-align: justify;
+    max-width: 270px;
+    height: 250px;
+    overflow: auto;
+    padding: 1rem; 
+}
+
+.image-area{
+    display: inline-block;
+    margin: 1rem 0rem 0rem 1rem;
+    
+}
+
+.image-area img{
+    opacity: 1;
+}
+
+.image-area img:hover{
+    opacity: 0.8;
+}
