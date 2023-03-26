@@ -1,32 +1,46 @@
-/* *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
+}
 
 body{
     background-color: #ececec;
     color: #1f1f1f;
 }
 
-.header{
-    display: inline-flex;
+header{
+    display: block;
 }
 
-.header ul{
+header ul{
     font-family: sans-serif;
     list-style-type: none;
     overflow: hidden;
     position: fixed;
-    top: 0;
+    top: 0; 
     width: 100%;
+    background-color: #1f1f1f;
 }
 
-.header ul li{
+header ul li{
     float: left;
     padding: 1rem;
 }
 
-.header ul li a{
+header ul li:hover{
+    background-color: rgba(0, 0, 0, 3);
+}
 
+header ul li a{
+    text-decoration: none;
+    color: #ececec;
+}
+
+.init{
+    background-color: #279403;
+}
+
+.init:hover{
+    background-color: #34c005;
 }
