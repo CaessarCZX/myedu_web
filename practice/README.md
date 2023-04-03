@@ -1,0 +1,1 @@
+In this practice, we are going to see how the Swiper library works for our projects. As an example, let's cratate an swiper like 'Mercado Libre'.
