@@ -1,0 +1,222 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.task-Container-creator{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 1.5rem;
+    margin: 0 1rem;
+    border-radius: 4px;
+    width: 500px;
+    max-width: 750px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.task-header-creator{
+    font-size: 3rem;
+    color: rgba(252, 252, 252, 0.4);
+    background-image: linear-gradient(210deg, #3e30da, #0b022b);
+    padding: 1rem 1rem 0;
+}
+
+.task-content-creator {
+    display: flex;
+    flex-direction: column;
+    padding:0 2rem 2rem;
+    gap: 1.6rem;
+}
+
+    .task-Container-creator input {
+        display: flex;
+        flex-wrap: wrap;
+        height: 3rem;
+        border: 0;
+        padding: 1rem;
+        line-height: 1.5rem;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    .task-Container-creator input::placeholder {
+        flex-wrap: wrap;
+        opacity: 0.5;
+        font-size: 1rem;
+    }
+
+    .task-Container-creator input:focus{
+        outline: solid 2px #3e30daa9;
+    }
+
+.task-content-creator button {
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 2.7rem;
+    width: 100%;
+    border: 0;
+    overflow: hidden;
+    background-image: linear-gradient(210deg, #3e30da, #0b022b);
+    /* background-color: #3e30da; */
+    border-radius: 7px;
+    color: rgba(252, 252, 252, 0.8);
+    font-size: 1rem;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    cursor: pointer;
+    transition-property: linear-gradient;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 1s;
+    
+    
+}
+
+    .task-content-creator button:hover {
+        background-image: linear-gradient(210deg, #a90f90, #db7093);
+        /* background-color: #a90f90; */
+        font-weight: 600;
+    }
+
+.task-Container {
+    width: 90vw;
+    margin: 0 1rem;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    border: solid 3px #ada8a8;
+}
+
+.task-header-principal {
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.3);
+    padding: 1rem 1rem 0; 
+    background-color: #d5d5d5;
+    position: relative;
+}
+
+.task-header-principal::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    width: 1rem;
+    height: 1rem;
+    background-color: greenyellow;
+    border-radius: 50%;
+    border: solid 2px #ada8a8;
+}
+
+.task-header-principal::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 7px;
+    width: 1rem;
+    height: 1rem;
+    background-color: palevioletred;
+    border-radius: 50%;
+    border: solid 2px #ada8a8;
+}
+
+#tasks-Content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    max-height: 500px;
+    overflow: auto;
+    list-style-type: none;
+}
+
+#tasks-Content li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    hyphens: auto;
+    word-break: break-all;
+    width: 200px;
+    height: 200px;
+    padding: 1.5rem;
+    border: solid 3px #ada8a8;
+    border-radius: 5px;
+    transition: height 0.3s ease-out;
+    position: relative;
+}
+
+    #tasks-Content li.ActionLi {
+        height: 240px;
+    }
+
+.task-Container ul li p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #828282;
+    font-size: 1rem;
+    font-weight: lighter;
+    height: 147px;
+    overflow: hidden;
+}
+
+    #tasks-Content li.ActionLi p {
+        height: 160px;
+        width: 153px;
+        overflow: auto;
+    }
+
+#tasks-Content li span {
+    display: block;
+    height: 1rem;
+    
+    
+}
+
+#tasks-Content li span button {
+    display: block;
+    visibility: collapse;
+    opacity: 0;
+    border: 0;
+    height: 1.5rem;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    color: rgba(252, 252, 252, 0.8);
+    background-image: linear-gradient(210deg, #a90f90, #db7093);
+    cursor: pointer;
+    transition: opacity 0.4s ease-in-out;
+}
+
+    #tasks-Content li.ActionLi button {
+        visibility: visible;
+        opacity: 1;
+    }
+/* Revision de propiedades css*/
+.cuadrado {
+    width: 100px;
+    height: 100px;
+    background-color: #3e30da;
+    transition: height 0.4s linear 0s, background-color 0.3s ease-out;
+}
+
+.cuadrado:hover {
+    width: 100px;
+    height: 200px;
+    background-color: #a90f90;
+}
