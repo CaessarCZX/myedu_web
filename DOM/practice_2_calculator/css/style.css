@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: inherit;
+    font-weight: 900;
+}
+
+html, body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(145deg, #ee4266, #ffd23f);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.root {
+    display: grid;
+    grid-template-columns: auto minmax(350px, 420px) auto;
+    grid-template-rows: auto 600px auto;
+    gap: 1rem;
+    height: inherit;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+
+    background-color: rgba(238, 66, 102, 0.3);
+    grid-area: 1 / 1 / 2 / 4;
+    padding: 1rem;
+}
+
+.title-wrap {
+    overflow: hidden;
+    display: flex;
+}
+
+.title-header {
+    display: flex;
+} 
+
+.logo-header {
+    height: 80%;
+    width: 8rem;
+}
+
+main.calculator-wrapper {
+    background-color: black;
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+footer {
+    grid-area: 3 / 1 / 4 / 4;
+    padding: 1rem;
+    background-color: #ffd23f;
+}

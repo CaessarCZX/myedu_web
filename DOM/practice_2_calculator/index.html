@@ -1,60 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=7">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
-        <title>Calculadora</title>
-    </head>
-    <body>
-        <div class="root">
-            <header>
-                <h1>Miniproyecto Calculadora</h1>
-                <div class="logo-header">
-                    <img src="" alt="">
-                </div>
-            </header>
-            <main>
-                <div class="calculator_wrapper">
-                    <div class="calculator-screen--container">
-                        <div class="calculator-screen__display-operators"></div>
-                        <div class="calculator-screen__display-results"></div>
-                    </div>
-                    <ul class="calculator-keyboard">
-                        <!-- Manage functions -->
-                        <li id="cl-key"></li>
-                        <li id="bk-key"></li>
-                        <li id="del-key"></li>
-                        <!-- Operations -->
-                        <li id="div-key"></li>
-                        <li id="mult-key"></li>
-                        <li id="add-key"></li>
-                        <li id="subt-key"></li>
-                        <li id="res-key"></li>
-                        <!-- numbers -->
-                        <li id="key-1"></li>
-                        <li id="key-2"></li>
-                        <li id="key-3"></li>
-                        <li id="key-4"></li>
-                        <li id="key-5"></li>
-                        <li id="key-6"></li>
-                        <li id="key-7"></li>
-                        <li id="key-8"></li>
-                        <li id="key-9"></li>
-                        <li id="key-0"></li>
-                        <!-- Secondary functions -->
-                        <li id="swtch-key"></li>
-                        <li id="pt-key"></li>
-                    </ul>
-                </div>
-            </main>
-            <footer></footer>
-        </div>
-        <script src="./js/index.js"></script>
-    </body>
 
-    <!-- <a target="_blank" href="https://icons8.com/icon/69QPdUHJ1fb4/calculadora">Calculadora</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="root">
+        <header>
+            <div class="title-wrap">
+                <h1>Miniproyecto Calculadora</h1>
+            </div>
+            <div class="logo-header">
+                <img src="https://campus.devf.la/static/media/logo-devf-white.0e9942b3.svg" alt="Logo dev-f">
+            </div>
+        </header>
+        <main class="calculator-wrapper">
+            <div class="calculator-screen--container">
+                <div class="calculator-screen__display-operators"></div>
+                <div class="calculator-screen__display-results"></div>
+            </div>
+            <ul class="calculator-keyboard">
+                <!-- Manage functions -->
+                <li id="cl-key">C</li>
+                <li id="bk-key">()</li>
+                <li id="del-key"></li>
+                <!-- Operations -->
+                <li id="div-key">/</li>
+                <li id="mult-key">x</li>
+                <li id="add-key">+</li>
+                <li id="subt-key">-</li>
+                <li id="res-key">=</li>
+                <!-- numbers -->
+                <li id="key-1">1</li>
+                <li id="key-2">2</li>
+                <li id="key-3">3</li>
+                <li id="key-4">4</li>
+                <li id="key-5">5</li>
+                <li id="key-6">6</li>
+                <li id="key-7">7</li>
+                <li id="key-8">8</li>
+                <li id="key-9">9</li>
+                <li id="key-0">0</li>
+                <!-- Secondary functions -->
+                <li id="swtch-key">+/-</li>
+                <li id="pt-key">.</li>
+            </ul>
+        </main>
+        <footer></footer>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+<!-- <a target="_blank" href="https://icons8.com/icon/69QPdUHJ1fb4/calculadora">Calculadora</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+
 </html>
