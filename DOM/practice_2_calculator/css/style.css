@@ -6,23 +6,32 @@
 
 h1 {
     font-family: inherit;
-    font-weight: 900;
+    font-weight: 400;
 }
 
 html, body {
     min-height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: linear-gradient(145deg, #ee4266, #ffd23f);
+    /* background-image: linear-gradient(45deg, #3d3580, #5e18ae); */
+    background-color: #fff;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 .root {
     display: grid;
-    grid-template-columns: auto minmax(350px, 420px) auto;
+    grid-template-columns: auto 350px auto;
     grid-template-rows: auto 600px auto;
     gap: 1rem;
     height: inherit;
+    transition: grid-template-columns 0.3s ease-in;
+}
+
+@media screen and (max-width: 410px) {
+    .root {
+        grid-template-columns: 0vw 95vw 0vw;
+        grid-template-rows: auto 100vh auto;
+    }
 }
 
 header {
@@ -31,7 +40,7 @@ header {
     align-items: center;
     height: 5rem;
 
-    background-color: rgba(238, 66, 102, 0.3);
+    background-image: linear-gradient(180deg, #1f1e1f 10% , #484646);
     grid-area: 1 / 1 / 2 / 4;
     padding: 1rem;
 }
@@ -39,6 +48,7 @@ header {
 .title-wrap {
     overflow: hidden;
     display: flex;
+    color: #fff;
 }
 
 .title-header {
@@ -51,12 +61,145 @@ header {
 }
 
 main.calculator-wrapper {
-    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    overflow: hidden;
+    border-radius: 35px;
+}
+
+main.calculator-wrapper--layout {
+    background-color: #14141b;
     grid-area: 2 / 2 / 3 / 3;
 }
 
-footer {
-    grid-area: 3 / 1 / 4 / 4;
+.calculator-screen--container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem 0;
+    min-height: 30%;
+    box-shadow: 0 2px 7px -1px rgba(255, 255, 255, 0.3);
+    border-radius: 1.2rem;
+    overflow: hidden;
+}
+
+.calculator-screen__display-operators {
+    height: 45%;
+    width: 100%;
+    padding: 0.7rem 1rem 0;
+    text-align: end;
+    color: #c9c7c7;
+    font-family: 'LCD', sans-serif;;
+    font-size: 2rem;
+}
+
+.calculator-screen__display-operators p {
+    margin-top: 0.5rem;
+}
+
+.calculator-screen__display-results {
+    height: 100%;
+    padding: 0.7rem 1rem 0;
+    text-align: end;
+    color: #c9c7c7;
+    font-family: 'LCD', sans-serif;;
+    font-size: 4rem;
+}
+
+.calculator-screen__display-results p {
+    margin-top: 2rem;
+}
+
+.calculator-keyboard {
+    overflow: hidden;
+    list-style-type: none;
+    display: grid;
+    margin: 0 1rem 1rem;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, fr);
+    gap: 1rem;
+}
+
+    #key-1 {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    #key-2 {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+    #key-3 {
+        grid-area: 2 / 3 / 3 / 4;
+    }
+    #key-4 {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+    #key-5 {
+        grid-area: 3 / 2 / 4 / 3;
+    }
+    #key-6 {
+        grid-area: 3 / 3 / 4 / 4;
+    }
+    #key-7 {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+    #key-8 {
+        grid-area: 4 / 2 / 5 / 3;
+    }
+    #key-9 {
+        grid-area: 4 / 3 / 5 / 4;
+    }
+    #key-0 {
+        grid-area: 5 / 2 / 6 / 3;
+    }
+
+    #pt-key {
+        grid-area: 5 / 1 / 6 / 2;
+    }
+    #res-key {
+        grid-area: 5 / 3 / 6 / 5;
+        width: 100%;
+        border-radius: 200px;
+        background-color: #0e9b1e;
+    }
+
+    
+    .calculator-keyboard li {
+        display: flex;
+        height: 3.7rem;
+        width: 3.7rem;
+        border-radius: 50%;
+        background-color: #656669;
+        font-size: 2rem;
+        font-weight: 500;
+        color: #000000;
+        font-family: inherit;
+        
+        text-shadow: 0 2px 2px rgba(255, 255, 255, 0.3);
+        justify-content: center;
+        align-items: center;
+        box-shadow: inset 0 3px 5px rgba(255, 255, 255, 0.3),
+        0 2px 2px rgb(200, 200, 200, 0.7);
+        cursor: pointer;
+        transition: background-color 0.2s ease-in;
+    }
+    
+    .calculator-keyboard li:hover {
+        background-color: #808285;
+    }
+    .calculator-keyboard li:active {
+        transform: scale(0.95);
+        background-color: #484646;
+        box-shadow: inset 0 3px 5px rgba(83, 5, 216, 0.3),
+        0 2px 2px rgba(8, 206, 241, 0.7);
+        color: #c9c7c7;
+    }
+    
+    .calculator-keyboard .result-button {
+        width: 5rem;
+    }
+    
+    footer {
+        grid-area: 3 / 1 / 4 / 4;
     padding: 1rem;
-    background-color: #ffd23f;
+    background-color: rgb(74, 74, 74, 0.7);
 }
